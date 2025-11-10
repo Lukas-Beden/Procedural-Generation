@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 5918244904970603658}
   - component: {fileID: 2167567473856945753}
   - component: {fileID: 5021895948504412770}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plains
   m_TagString: mapPrefabs
   m_Icon: {fileID: 0}
