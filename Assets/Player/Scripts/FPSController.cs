@@ -8,7 +8,6 @@ public class FPSController : MonoBehaviour
 
     [Header("Movement")]
     private int _moveSpeed = 5;
-    private bool _onGround = false;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private int jumpForce;
 
