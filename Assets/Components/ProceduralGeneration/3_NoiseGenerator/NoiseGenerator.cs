@@ -15,13 +15,14 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
     [CreateAssetMenu(menuName = "Procedural Generation Method/Noise Generator")]
     public class NoiseGenerator : ProceduralGenerationMethod
     {
-        private FastNoiseLite _noise = new();
+        public FastNoiseLite _noise = new();
 
         [Header("Général")]
         [SerializeField] private FastNoiseLite.NoiseType _noiseType = FastNoiseLite.NoiseType.OpenSimplex2;
+        [SerializeField] private int _seed;
         [Range(0.01f, 0.1f)]
         [SerializeField] private float _frequency = 0.01f;
-        [Range(0, 2)]
+        [Range(0, 20)]
         [SerializeField] private float _amplitude = 1f;
 
         [Header("Fractal")]
@@ -83,19 +84,24 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
                     if (noiseValue <= _water)
                     {
                         AddTileToCell(chosenCell, WATER_TILE_NAME, false);
-                    } else if (noiseValue <= _sand)
+                    }
+                    else if (noiseValue <= _sand)
                     {
                         AddTileToCell(chosenCell, SAND_TILE_NAME, false);
-                    } else if (noiseValue <= _room)
+                    }
+                    else if (noiseValue <= _room)
                     {
                         AddTileToCell(chosenCell, ROOM_TILE_NAME, false);
-                    } else if (noiseValue <= _corridor)
+                    }
+                    else if (noiseValue <= _corridor)
                     {
                         AddTileToCell(chosenCell, CORRIDOR_TILE_NAME, false);
-                    }else if (noiseValue <= _grass)
+                    }
+                    else if (noiseValue <= _grass)
                     {
                         AddTileToCell(chosenCell, GRASS_TILE_NAME, false);
-                    }else if (noiseValue <= _rock)
+                    }
+                    else if (noiseValue <= _rock)
                     {
                         AddTileToCell(chosenCell, ROCK_TILE_NAME, false);
                     }
@@ -105,7 +111,7 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
         public void CreateNoise()
         {
-            _noise.SetSeed(RandomService.Seed);
+            _noise.SetSeed(_seed);
             _noise.SetNoiseType(_noiseType);
             _noise.SetFrequency(_frequency);
 
@@ -126,6 +132,12 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
         {
             float NoiseAtCoords = noise.GetNoise(x, z) * _amplitude;
             return Mathf.Clamp(NoiseAtCoords, -1, 1);
+        }
+
+        public float GetNoiseDataNotClamped(FastNoiseLite noise, int x, int z)
+        {
+            float NoiseAtCoords = noise.GetNoise(x, z) * _amplitude;
+            return NoiseAtCoords;
         }
 
         public float Get01NoiseData(FastNoiseLite noise, int x, int z)
