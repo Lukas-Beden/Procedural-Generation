@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxSteps: 1000
   _noiseType: 0
-  _frequency: 0.0224
-  _amplitude: 2.9
-  _fractalType: 1
-  _fractalOctaves: 4
-  _lacunarity: 1.92
-  _gain: 0.5
-  _wStrength: 0
-  _ppStrength: 0
+  _seed: 0
+  _frequency: 0.0276
+  _amplitude: 7.4
+  _fractalType: 2
+  _fractalOctaves: 5
+  _lacunarity: 2.2
+  _gain: 0.4
+  _wStrength: 0.7
+  _ppStrength: 0.2
   _cellularDistanceFunction: 1
   _cellularReturnType: 1
   _jitter: 1
