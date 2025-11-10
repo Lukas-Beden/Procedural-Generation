@@ -11,6 +11,7 @@ public class MyMeshGenerator : MonoBehaviour
     BMesh mesh;
 
     [SerializeField] private NoiseGenerator noiseGenerator;
+    [SerializeField] private GameObject _prefabGrass;
 
     public BMesh GenerateGrid()
     {
@@ -29,6 +30,7 @@ public class MyMeshGenerator : MonoBehaviour
         foreach (Vertex v in mesh.vertices)
         {
             v.point.y = noiseGenerator.GetNoiseDataNotClamped(noiseGenerator._noise, (int)v.point.x, (int)v.point.z);
+            Instantiate(_prefabGrass, new Vector3(v.point.x, v.point.y - 10, v.point.z), Quaternion.identity, gameObject.transform);
         }
         BMeshUnity.SetInMeshFilter(mesh, GetComponent<MeshFilter>());
         MeshCollider meshCollider = GetComponent<MeshCollider>();

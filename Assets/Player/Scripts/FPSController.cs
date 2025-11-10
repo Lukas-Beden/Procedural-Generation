@@ -55,10 +55,8 @@ public class FPSController : MonoBehaviour
 
     void Jump()
     {
-        Debug.Log("feur");
         if (_inputHandler.Jump && IsGrounded())
         {
-            Debug.Log("apagnan");
             Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             rb.linearVelocity = new Vector3(0, jumpForce, 0);
         }
