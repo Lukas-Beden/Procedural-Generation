@@ -8,6 +8,9 @@ public class FPSController : MonoBehaviour
 
     [Header("Movement")]
     private int _moveSpeed = 5;
+    private bool _onGround = false;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private int jumpForce;
 
     [Header("Camera")]
     [SerializeField] private Camera _mainCamera;
@@ -25,6 +28,7 @@ public class FPSController : MonoBehaviour
     void Update()
     {
         Move();
+        Jump();
         Look();
     }
 
@@ -44,6 +48,21 @@ public class FPSController : MonoBehaviour
         _xRotation -= look.y * (_mouseSensitivity * Time.deltaTime);
         _xRotation = Mathf.Clamp(_xRotation, -90f, 90f);
         _mainCamera.transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+    }
+    bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, 1.1f, groundLayer);
+    }
+
+    void Jump()
+    {
+        Debug.Log("feur");
+        if (_inputHandler.Jump && IsGrounded())
+        {
+            Debug.Log("apagnan");
+            Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+            rb.linearVelocity = new Vector3(0, jumpForce, 0);
+        }
     }
 }
  
