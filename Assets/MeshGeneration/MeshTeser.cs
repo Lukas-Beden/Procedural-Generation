@@ -31,8 +31,14 @@ public class MyMeshGenerator : MonoBehaviour
             v.point.y = noiseGenerator.GetNoiseDataNotClamped(noiseGenerator._noise, (int)v.point.x, (int)v.point.z);
         }
         BMeshUnity.SetInMeshFilter(mesh, GetComponent<MeshFilter>());
+        MeshCollider meshCollider = GetComponent<MeshCollider>();
+        if (meshCollider != null)
+        {
+            Destroy(meshCollider);
+        }
+        gameObject.AddComponent<MeshCollider>();
 
-        return bm;
+        return bm;  
 
     }
 

@@ -708,8 +708,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 34215357}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751065998
@@ -808,7 +807,7 @@ Transform:
   m_GameObject: {fileID: 1751065998}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.35188, y: 9.95, z: -12.73964}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -986,7 +985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023422591401259908, guid: 6c761a76b2edc8e479284d2dab92cda2, type: 3}
       propertyPath: jumpForce
-      value: 100
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4023422591401259908, guid: 6c761a76b2edc8e479284d2dab92cda2, type: 3}
       propertyPath: groundLayer.m_Bits
@@ -1031,6 +1030,10 @@ PrefabInstance:
     - target: {fileID: 4716925686231640217, guid: 6c761a76b2edc8e479284d2dab92cda2, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359543235710500060, guid: 6c761a76b2edc8e479284d2dab92cda2, type: 3}
+      propertyPath: far clip plane
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6359543235710500060, guid: 6c761a76b2edc8e479284d2dab92cda2, type: 3}
       propertyPath: m_TargetTexture
@@ -1129,3 +1132,5 @@ SceneRoots:
   - {fileID: 379558970}
   - {fileID: 499800898}
   - {fileID: 1751066002}
+  - {fileID: 1338917352}
+  - {fileID: 1969968328}
