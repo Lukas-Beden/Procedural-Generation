@@ -12,14 +12,13 @@ public class DrawOnGround : MonoBehaviour
     public LineRenderer line;
 
     [Header("Portal Settings")]
-    public Material portalMaterial; // assign your custom material in inspector
+    public Material portalMaterial;
 
-    public float minPointDistance = 0.05f; // minimum distance between points
+    public float minPointDistance = 0.05f;
 
     private bool isDrawing;
     private List<Vector3> points = new List<Vector3>();
 
-    // Event: triggered when a mesh is created
     public event Action<Mesh, GameObject> MeshCreated;
 
     void Update()
@@ -27,7 +26,6 @@ public class DrawOnGround : MonoBehaviour
         var mouse = Mouse.current;
         if (mouse == null) return;
 
-        // Start drawing
         if (mouse.leftButton.wasPressedThisFrame)
         {
             points.Clear();
@@ -35,7 +33,6 @@ public class DrawOnGround : MonoBehaviour
             isDrawing = true;
         }
 
-        // Continue drawing
         if (isDrawing)
         {
             if (Physics.Raycast(cam.ScreenPointToRay(mouse.position.ReadValue()), out RaycastHit hit, 100f, groundMask))
@@ -50,7 +47,6 @@ public class DrawOnGround : MonoBehaviour
             }
         }
 
-        // Finish drawing
         if (mouse.leftButton.wasReleasedThisFrame)
         {
             SmoothPoints(points);
@@ -60,18 +56,16 @@ public class DrawOnGround : MonoBehaviour
 
             if (meshObj != null)
             {
-                // Assign custom material
                 MeshRenderer renderer = meshObj.GetComponent<MeshRenderer>();
                 if (renderer != null && portalMaterial != null)
                 {
-                    renderer.material = new Material(portalMaterial); // create instance per portal
+                    renderer.material = new Material(portalMaterial);
                 }
 
                 Mesh mesh = meshObj.GetComponent<MeshFilter>().mesh;
                 MeshCreated?.Invoke(mesh, meshObj);
             }
         }
-
     }
 
     List<Vector3> SmoothPoints(List<Vector3> rawPoints, float factor = 0.5f)
@@ -98,42 +92,34 @@ public class DrawOnGround : MonoBehaviour
     {
         if (points3D.Count < 3) return null;
 
-        // Convert to 2D (XZ)
         Vector2[] points2D = new Vector2[points3D.Count];
         for (int i = 0; i < points3D.Count; i++)
             points2D[i] = new Vector2(points3D[i].x, points3D[i].z);
 
-        // Ensure correct winding
         if (GetPolygonArea(points2D) < 0)
         {
             System.Array.Reverse(points2D);
             points3D.Reverse();
         }
 
-        // Triangulate
         Triangulator tr = new Triangulator(points2D);
         int[] indices = tr.Triangulate();
 
-        // Vertices and normals
         Vector3[] vertices = points3D.ToArray();
         Vector3[] normals = new Vector3[vertices.Length];
         for (int i = 0; i < normals.Length; i++) normals[i] = Vector3.up;
 
-        // Slight offset to prevent Z-fighting
         for (int i = 0; i < vertices.Length; i++)
             vertices[i] += Vector3.up * 0.01f;
 
-        // Generate UVs
         Vector2[] uvs = GenerateUVs(points3D);
 
-        // Create mesh
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = indices;
         mesh.normals = normals;
         mesh.uv = uvs;
 
-        // Create object
         GameObject go = new GameObject("DrawnMesh", typeof(MeshFilter), typeof(MeshRenderer));
         go.GetComponent<MeshFilter>().mesh = mesh;
 

@@ -8,17 +8,16 @@ public class SimplePortal : MonoBehaviour
     public MeshRenderer screen;
     public Transform destination;
     public Camera destinationCamera;
-    public PortalType portalType = PortalType.TypeA; // assign type in inspector
+    public PortalType portalType = PortalType.Desert;
+    public GameObject createdMap;
 
     private Camera playerCam;
     private RenderTexture viewTexture;
 
-    // Dictionary to track existing portals by type
     private static Dictionary<PortalType, SimplePortal> existingPortals = new();
 
     private void Awake()
     {
-        // Destroy previous portal of the same type
         if (existingPortals.ContainsKey(portalType) && existingPortals[portalType] != this)
         {
             Destroy(existingPortals[portalType].gameObject);
@@ -27,11 +26,9 @@ public class SimplePortal : MonoBehaviour
 
         playerCam = Camera.main;
 
-        // Disable destination camera
         if (destinationCamera != null)
             destinationCamera.enabled = false;
 
-        // Setup collider
         MeshCollider col = gameObject.GetComponent<MeshCollider>();
         if (!col) col = gameObject.AddComponent<MeshCollider>();
         col.convex = true;
@@ -43,11 +40,9 @@ public class SimplePortal : MonoBehaviour
         destination = destinationTransform;
         destinationCamera = destCam;
 
-        // Disable destination camera so it only renders to texture
         if (destinationCamera != null)
             destinationCamera.enabled = false;
 
-        // Ensure the portal mesh has a collider
         MeshCollider col = gameObject.GetComponent<MeshCollider>();
         if (!col) col = gameObject.AddComponent<MeshCollider>();
         col.convex = true;
@@ -57,17 +52,17 @@ public class SimplePortal : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Remove from dictionary
         if (existingPortals.ContainsKey(portalType) && existingPortals[portalType] == this)
         {
             existingPortals.Remove(portalType);
         }
 
-        // Release RenderTexture
         if (viewTexture != null)
         {
             viewTexture.Release();
             Destroy(viewTexture);
+            Destroy(destination.gameObject);
+            Destroy(createdMap);
         }
     }
 
@@ -124,6 +119,7 @@ public class SimplePortal : MonoBehaviour
         {
             other.transform.position = destination.position;
             other.transform.rotation = destination.rotation;
+            Destroy(gameObject);
         }
     }
 }

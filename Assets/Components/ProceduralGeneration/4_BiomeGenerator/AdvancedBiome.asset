@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: AdvancedBiome
   m_EditorClassIdentifier: 
   _maxSteps: 1000
-  _amplitude: 1
   _SeedTemp: 1390
   _tempFrequency: 0.02
   _tempFractalType: 1
