@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4905768753606978827}
   m_Layer: 0
   m_Name: PortalConnector
-  m_TagString: Untagged
+  m_TagString: portalConnector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,5 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawer: {fileID: 0}
-  portalPrefab: {fileID: 0}
-  destination: {fileID: 0}
+  destinationPrefab: {fileID: 720273455009083267, guid: 48bfac4e308cf304cad2c0cdf8705701, type: 3}
+  mapPrefabs:
+  - {fileID: 5868179255586614866, guid: 5fd524cadf67d964e89751d609e29bf3, type: 3}
+  - {fileID: 1347399080127293721, guid: 4a9c74d2cbd14d048887d7299d15fbd5, type: 3}
+  - {fileID: 1897167560737185650, guid: a98529f47eb6a2748b7aed9c74f499f1, type: 3}
+  portalTypeObtained: 01000000
+  portalMaterial: {fileID: 2100000, guid: e736cee82010b7d4990d902c5687bb5a, type: 2}
+  portalType: 0

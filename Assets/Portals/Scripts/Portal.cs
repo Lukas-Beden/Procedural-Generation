@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshCollider))]
@@ -14,25 +14,24 @@ public class SimplePortal : MonoBehaviour
     private Camera playerCam;
     private RenderTexture viewTexture;
 
-    private static Dictionary<PortalType, SimplePortal> existingPortals = new();
+    private static List<GameObject> activeMaps = new();
+    private static GameObject currentMap;
+    private static GameObject pendingOldMap;
+
+    private PortalConnector connector;
 
     private void Awake()
     {
-        if (existingPortals.ContainsKey(portalType) && existingPortals[portalType] != this)
-        {
-            Destroy(existingPortals[portalType].gameObject);
-        }
-        existingPortals[portalType] = this;
-
         playerCam = Camera.main;
 
         if (destinationCamera != null)
             destinationCamera.enabled = false;
 
-        MeshCollider col = gameObject.GetComponent<MeshCollider>();
-        if (!col) col = gameObject.AddComponent<MeshCollider>();
+        MeshCollider col = GetComponent<MeshCollider>();
         col.convex = true;
         col.isTrigger = true;
+
+        connector = GameObject.FindGameObjectWithTag("portalConnector").GetComponent<PortalConnector>();
     }
 
     public void Initialize(Transform destinationTransform, Camera destCam)
@@ -43,27 +42,9 @@ public class SimplePortal : MonoBehaviour
         if (destinationCamera != null)
             destinationCamera.enabled = false;
 
-        MeshCollider col = gameObject.GetComponent<MeshCollider>();
-        if (!col) col = gameObject.AddComponent<MeshCollider>();
+        MeshCollider col = GetComponent<MeshCollider>();
         col.convex = true;
         col.isTrigger = true;
-    }
-
-
-    private void OnDestroy()
-    {
-        if (existingPortals.ContainsKey(portalType) && existingPortals[portalType] == this)
-        {
-            existingPortals.Remove(portalType);
-        }
-
-        if (viewTexture != null)
-        {
-            viewTexture.Release();
-            Destroy(viewTexture);
-            Destroy(destination.gameObject);
-            Destroy(createdMap);
-        }
     }
 
     private void LateUpdate()
@@ -79,9 +60,10 @@ public class SimplePortal : MonoBehaviour
         Matrix4x4 m = destination.localToWorldMatrix * transform.worldToLocalMatrix * playerCam.transform.localToWorldMatrix;
         Vector3 portalCamPos = m.GetColumn(3);
 
+        portalCamPos.y = destination.transform.position.y;
+
         destinationCamera.transform.SetPositionAndRotation(portalCamPos, m.rotation);
         destinationCamera.projectionMatrix = playerCam.projectionMatrix;
-
         destinationCamera.Render();
 
         screen.material.SetTexture("_MainTex", viewTexture);
@@ -102,6 +84,11 @@ public class SimplePortal : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        Destroy(destination.gameObject);
+    }
+
     public void SetPortalMesh(GameObject meshObject)
     {
         screen = meshObject.GetComponent<MeshRenderer>();
@@ -119,7 +106,43 @@ public class SimplePortal : MonoBehaviour
         {
             other.transform.position = destination.position;
             other.transform.rotation = destination.rotation;
+
+            if (activeMaps.Count > 1)
+            {
+                GameObject oldestMap = activeMaps[0];
+                if (oldestMap != null)
+                    Destroy(oldestMap);
+
+                activeMaps.RemoveAt(0);
+            }
+
             Destroy(gameObject);
         }
     }
+
+    public static void SetCurrentMap(GameObject newMap)
+    {
+        if (newMap == null) return;
+
+        if (activeMaps.Count > 1)
+        {
+            GameObject lastMap = activeMaps[activeMaps.Count - 1];
+            if (lastMap != null)
+                Object.Destroy(lastMap);
+
+            activeMaps.RemoveAt(activeMaps.Count - 1);
+        }
+        activeMaps.Add(newMap);
+    }
+
+    public static void DeleteLastPortalMap()
+    {
+        if (pendingOldMap != null)
+        {
+            Destroy(pendingOldMap);
+            pendingOldMap = null;
+        }
+    }
+
+    public static GameObject GetCurrentMap() => currentMap;
 }

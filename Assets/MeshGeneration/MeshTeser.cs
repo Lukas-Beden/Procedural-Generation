@@ -1,4 +1,4 @@
-using Components.ProceduralGeneration.SimpleRoomPlacement;
+        using Components.ProceduralGeneration.SimpleRoomPlacement;
 using Unity.Mathematics;
 using UnityEngine;
 using static BMesh;
@@ -11,16 +11,28 @@ public class MyMeshGenerator : MonoBehaviour
     BMesh mesh;
 
     [SerializeField] private NoiseGenerator noiseGenerator;
-    [SerializeField] private GameObject _prefabGrass;
+    [SerializeField] private Material _material;
+    [SerializeField] private Gradient gradient;
+
+    public MinMax _elevationMinMax;
+    public ColourGenerator _colourGenerator;
+
+    [SerializeField] private VegetationPlacer vegetationPlacer;
 
     public BMesh GenerateGrid()
     {
+
+        _elevationMinMax = new MinMax();
+        _colourGenerator = new ColourGenerator(_material);
+        Texture2D gradientTex = GradientUtils.CreateGradientTexture(gradient);
+        _material.SetTexture("_GradientTex", gradientTex);
+
         BMesh bm = new BMesh();
         for (int j = 0; j < height; ++j)
         {
             for (int i = 0; i < width; ++i)
             {
-                bm.AddVertex(i, 0, j); // vertex # i + j * w
+                bm.AddVertex(i, 0, j);
                 if (i > 0 && j > 0) bm.AddFace(i + j * width, i - 1 + j * width, i - 1 + (j - 1) * width, i + (j - 1) * width);
             }
         }
@@ -30,7 +42,7 @@ public class MyMeshGenerator : MonoBehaviour
         foreach (Vertex v in mesh.vertices)
         {
             v.point.y = noiseGenerator.GetNoiseDataNotClamped(noiseGenerator._noise, (int)v.point.x, (int)v.point.z);
-            Instantiate(_prefabGrass, new Vector3(v.point.x, v.point.y - 10, v.point.z), Quaternion.identity, gameObject.transform);
+            _elevationMinMax.AddValue(v.point.y);
         }
         BMeshUnity.SetInMeshFilter(mesh, GetComponent<MeshFilter>());
         MeshCollider meshCollider = GetComponent<MeshCollider>();
@@ -38,26 +50,20 @@ public class MyMeshGenerator : MonoBehaviour
         {
             Destroy(meshCollider);
         }
+        gameObject.GetComponent<MeshRenderer>().material = _material;
+        _colourGenerator.UpdateElevation(_elevationMinMax);
         gameObject.AddComponent<MeshCollider>();
 
-        return bm;  
+        if (vegetationPlacer != null)
+        {
+            vegetationPlacer.PlaceVegetation(mesh, _elevationMinMax);
+        }
 
+        return bm;
     }
 
     void Start()
     {
-        //mesh = GenerateGrid();
-        //noiseGenerator.CreateNoise();
-        //foreach (Vertex v in mesh.vertices)
-        //{
-        //    v.point.y = noiseGenerator.GetNoiseDataNotClamped(noiseGenerator._noise, (int)v.point.x, (int)v.point.z);
-        //}
-        //BMeshUnity.SetInMeshFilter(mesh, GetComponent<MeshFilter>());
+        GenerateGrid();
     }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.matrix = transform.localToWorldMatrix;
-    //    if (mesh != null) BMeshUnity.DrawGizmos(mesh);
-    //}
 }

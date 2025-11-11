@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7d001c91e57cc64c921d2cb960ffed5, type: 3}
-  m_Name: Plains
+  m_Name: Moutain
   m_EditorClassIdentifier: 
   _maxSteps: 1000
   _noiseType: 0
   _seed: 7
   _frequency: 0.01
-  _amplitude: 2.9
+  _amplitude: 20
   _fractalType: 1
-  _fractalOctaves: 4
-  _lacunarity: 1.92
-  _gain: 0.5
+  _fractalOctaves: 9
+  _lacunarity: 2.26
+  _gain: 0.52
   _wStrength: 0
   _ppStrength: 0
   _cellularDistanceFunction: 1
