@@ -35,7 +35,7 @@ public class DrawOnGround : MonoBehaviour
 
         if (mouse.leftButton.wasPressedThisFrame)
         {
-            if (!connector.portalTypeObtained.Contains(connector.portalType))
+            if (!connector.utilisablePortalType.Contains(connector.portalType))
             {
                 return;
             }
@@ -60,7 +60,7 @@ public class DrawOnGround : MonoBehaviour
 
         if (mouse.leftButton.wasReleasedThisFrame)
         {
-            if (!connector.portalTypeObtained.Contains(connector.portalType))
+            if (!connector.utilisablePortalType.Contains(connector.portalType))
             {
                 return;
             }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxSteps: 1000
   _noiseType: 0
-  _seed: 7
+  _seed: 230
   _frequency: 0.01
   _amplitude: 2
   _fractalType: 1

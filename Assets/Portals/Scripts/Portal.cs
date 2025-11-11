@@ -118,6 +118,8 @@ public class SimplePortal : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        connector.ChangePortalList();
     }
 
     public static void SetCurrentMap(GameObject newMap)

@@ -8,6 +8,7 @@ public class PortalConnector : MonoBehaviour
     public GameObject destinationPrefab;
     public List<GameObject> mapPrefabs;
     public List<PortalType> portalTypeObtained;
+    public List<PortalType> utilisablePortalType;
     public Material portalMaterial;
     public PortalType portalType = PortalType.Plains;
 
@@ -109,5 +110,20 @@ public class PortalConnector : MonoBehaviour
         portal.createdMap = newMap;
 
         SimplePortal.SetCurrentMap(newMap);
+    }
+
+    public void ChangePortalList()
+    {
+        utilisablePortalType.Clear();
+
+        foreach (PortalType obtPortalType in portalTypeObtained)
+        {
+            if (obtPortalType != portalType)
+            {
+                utilisablePortalType.Add(obtPortalType);
+            }
+        }
+
+        //portalType = utilisablePortalType[0];
     }
 }

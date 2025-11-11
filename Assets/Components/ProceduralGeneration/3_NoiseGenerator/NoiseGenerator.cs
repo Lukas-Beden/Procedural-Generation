@@ -1,14 +1,9 @@
 ﻿using Cysharp.Threading.Tasks;
 using System;
-using System.Buffers.Text;
-using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Threading;
-using Unity.Mathematics;
-using UnityEditor.Build.Content;
 using UnityEngine;
-using UnityEngine.UIElements;
 using VTools.Grid;
-using VTools.ScriptableObjectDatabase;
 
 namespace Components.ProceduralGeneration.SimpleRoomPlacement
 {
@@ -111,7 +106,7 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
         public void CreateNoise()
         {
-            _noise.SetSeed(_seed);
+            _noise.SetSeed(RandomNumberGenerator.GetInt32(1000000));
             _noise.SetNoiseType(_noiseType);
             _noise.SetFrequency(_frequency);
 

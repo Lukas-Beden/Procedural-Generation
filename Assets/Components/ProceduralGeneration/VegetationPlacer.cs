@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using UnityEngine;
 
 public class VegetationPlacer : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class VegetationPlacer : MonoBehaviour
     [SerializeField] private float minTreeHeight = 0.3f;
     [SerializeField] private float maxTreeHeight = 0.8f;
     [SerializeField] private float yOffset = -10f;
+    [SerializeField] private float sampleDistance = 2f; // Sample every N vertices
 
     [Header("Noise Settings")]
     [SerializeField] private int seed = 12345;
@@ -32,6 +34,9 @@ public class VegetationPlacer : MonoBehaviour
     private FastNoiseLite detailNoise;
 
     private Transform vegetationParent;
+
+    // Cache for slope calculations
+    private Dictionary<BMesh.Vertex, float> slopeCache = new Dictionary<BMesh.Vertex, float>();
 
     public PortalConnector portalConnector;
 
@@ -47,23 +52,23 @@ public class VegetationPlacer : MonoBehaviour
 
     private void InitializeNoiseGenerators()
     {
-        densityNoise = new FastNoiseLite(seed);
+        densityNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
         densityNoise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         densityNoise.SetFrequency(0.15f);
         densityNoise.SetFractalType(FastNoiseLite.FractalType.FBm);
         densityNoise.SetFractalOctaves(3);
 
-        typeNoise = new FastNoiseLite(seed + 1000);
+        typeNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
         typeNoise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
         typeNoise.SetFrequency(0.2f);
 
-        clusterNoise = new FastNoiseLite(seed + 2000);
+        clusterNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
         clusterNoise.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
         clusterNoise.SetFrequency(0.25f);
         clusterNoise.SetCellularDistanceFunction(FastNoiseLite.CellularDistanceFunction.Euclidean);
         clusterNoise.SetCellularReturnType(FastNoiseLite.CellularReturnType.Distance2Add);
 
-        detailNoise = new FastNoiseLite(seed + 3000);
+        detailNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
         detailNoise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         detailNoise.SetFrequency(0.8f);
     }
@@ -71,18 +76,29 @@ public class VegetationPlacer : MonoBehaviour
     public void PlaceVegetation(BMesh mesh, MinMax elevationMinMax)
     {
         ClearVegetation();
+        slopeCache.Clear();
 
         float minElevation = elevationMinMax.Min;
         float maxElevation = elevationMinMax.Max;
         float elevationRange = maxElevation - minElevation;
 
-        foreach (BMesh.Vertex v in mesh.vertices)
+        // Build spatial lookup for efficient neighbor finding
+        Dictionary<Vector2Int, BMesh.Vertex> spatialGrid = BuildSpatialGrid(mesh);
+
+        // Pre-batch vegetation instances to instantiate
+        List<VegetationInstance> instancesToCreate = new List<VegetationInstance>();
+
+        // Sample vertices at intervals instead of every vertex
+        int sampleStep = Mathf.Max(1, Mathf.RoundToInt(sampleDistance));
+
+        for (int i = 0; i < mesh.vertices.Count; i += sampleStep)
         {
+            BMesh.Vertex v = mesh.vertices[i];
             Vector3 pos = v.point;
 
             float normalizedHeight = (pos.y - minElevation) / elevationRange;
 
-            float slope = CalculateSlope(mesh, v);
+            float slope = CalculateSlopeFast(mesh, v, spatialGrid);
 
             if (slope > maxSlope)
                 continue;
@@ -91,9 +107,75 @@ public class VegetationPlacer : MonoBehaviour
 
             if (vegData.shouldPlace)
             {
-                PlaceVegetationAtPoint(pos, vegData);
+                instancesToCreate.Add(new VegetationInstance
+                {
+                    position = pos,
+                    data = vegData
+                });
             }
         }
+
+        // Batch instantiate all vegetation at once
+        BatchInstantiateVegetation(instancesToCreate);
+    }
+
+    private Dictionary<Vector2Int, BMesh.Vertex> BuildSpatialGrid(BMesh mesh)
+    {
+        Dictionary<Vector2Int, BMesh.Vertex> grid = new Dictionary<Vector2Int, BMesh.Vertex>();
+
+        foreach (BMesh.Vertex v in mesh.vertices)
+        {
+            Vector2Int key = new Vector2Int(
+                Mathf.RoundToInt(v.point.x),
+                Mathf.RoundToInt(v.point.z)
+            );
+
+            if (!grid.ContainsKey(key))
+            {
+                grid[key] = v;
+            }
+        }
+
+        return grid;
+    }
+
+    private float CalculateSlopeFast(BMesh mesh, BMesh.Vertex vertex, Dictionary<Vector2Int, BMesh.Vertex> spatialGrid)
+    {
+        // Check cache first
+        if (slopeCache.TryGetValue(vertex, out float cachedSlope))
+        {
+            return cachedSlope;
+        }
+
+        Vector3 pos = vertex.point;
+        Vector2Int gridPos = new Vector2Int(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.z));
+
+        float maxHeightDiff = 0f;
+
+        // Only check immediate neighbors (8 directions)
+        Vector2Int[] neighborOffsets = new Vector2Int[]
+        {
+            new Vector2Int(-1, 0), new Vector2Int(1, 0),
+            new Vector2Int(0, -1), new Vector2Int(0, 1),
+            new Vector2Int(-1, -1), new Vector2Int(1, 1),
+            new Vector2Int(-1, 1), new Vector2Int(1, -1)
+        };
+
+        foreach (Vector2Int offset in neighborOffsets)
+        {
+            Vector2Int neighborKey = gridPos + offset;
+
+            if (spatialGrid.TryGetValue(neighborKey, out BMesh.Vertex neighbor))
+            {
+                float heightDiff = Mathf.Abs(pos.y - neighbor.point.y);
+                maxHeightDiff = Mathf.Max(maxHeightDiff, heightDiff);
+            }
+        }
+
+        float slope = Mathf.Clamp01(maxHeightDiff / 2f);
+        slopeCache[vertex] = slope;
+
+        return slope;
     }
 
     private VegetationData GetVegetationData(float x, float z, float normalizedHeight)
@@ -153,17 +235,24 @@ public class VegetationPlacer : MonoBehaviour
         }
     }
 
-    private void PlaceVegetationAtPoint(Vector3 position, VegetationData data)
+    private void BatchInstantiateVegetation(List<VegetationInstance> instances)
     {
-        GameObject prefab = GetPrefabForType(data.vegType);
+        foreach (VegetationInstance instance in instances)
+        {
+            GameObject prefab = GetPrefabForType(instance.data.vegType);
 
-        if (prefab == null)
-            return;
+            if (prefab == null)
+                continue;
 
-        Vector3 adjustedPosition = new Vector3(position.x, position.y + yOffset + portalConnector.mapOffset[portalConnector.portalType].y, position.z);
+            Vector3 adjustedPosition = new Vector3(
+                instance.position.x,
+                instance.position.y + yOffset + portalConnector.mapOffset[portalConnector.portalType].y,
+                instance.position.z
+            );
 
-        GameObject instance = Instantiate(prefab, adjustedPosition, Quaternion.Euler(0, data.rotation, 0), vegetationParent);
-        instance.transform.localScale = Vector3.one * data.scale;
+            GameObject obj = Instantiate(prefab, adjustedPosition, Quaternion.Euler(0, instance.data.rotation, 0), vegetationParent);
+            obj.transform.localScale = Vector3.one * instance.data.scale;
+        }
     }
 
     private GameObject GetPrefabForType(VegetationType type)
@@ -189,30 +278,6 @@ public class VegetationPlacer : MonoBehaviour
         }
     }
 
-    private float CalculateSlope(BMesh mesh, BMesh.Vertex vertex)
-    {
-
-        int index = mesh.vertices.IndexOf(vertex);
-        if (index == -1) return 0f;
-
-        Vector3 pos = vertex.point;
-        float maxHeightDiff = 0f;
-
-        foreach (var otherVertex in mesh.vertices)
-        {
-            float distance = Vector3.Distance(new Vector3(pos.x, 0, pos.z),
-                                             new Vector3(otherVertex.point.x, 0, otherVertex.point.z));
-
-            if (distance > 0.1f && distance < 1.5f)
-            {
-                float heightDiff = Mathf.Abs(pos.y - otherVertex.point.y);
-                maxHeightDiff = Mathf.Max(maxHeightDiff, heightDiff);
-            }
-        }
-
-        return Mathf.Clamp01(maxHeightDiff / 2f);
-    }
-
     public void ClearVegetation()
     {
         if (vegetationParent != null)
@@ -230,6 +295,12 @@ public class VegetationPlacer : MonoBehaviour
         public VegetationType vegType;
         public float scale;
         public float rotation;
+    }
+
+    private struct VegetationInstance
+    {
+        public Vector3 position;
+        public VegetationData data;
     }
 
     private enum VegetationType

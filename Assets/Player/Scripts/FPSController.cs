@@ -16,6 +16,15 @@ public class FPSController : MonoBehaviour
     private float _xRotation = 0f;
     private float _mouseSensitivity = 25f;
 
+    [Header("PortalMechanics")]
+    private PortalConnector _portalConnector;
+    private int indexActualPortal = 0;
+
+    private void Awake()
+    {
+        _portalConnector = GameObject.FindGameObjectWithTag("portalConnector").GetComponent<PortalConnector>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +38,7 @@ public class FPSController : MonoBehaviour
         Move();
         Jump();
         Look();
+        ChangePaintColor();
     }
 
     void Move()
@@ -60,6 +70,20 @@ public class FPSController : MonoBehaviour
             Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             rb.linearVelocity = new Vector3(0, jumpForce, 0);
         }
+    }
+
+    void ChangePaintColor()
+    {
+        if (_inputHandler.ChangePaint > 0)
+        {
+            indexActualPortal++;
+        } else if (_inputHandler.ChangePaint < 0)
+        {
+            indexActualPortal--;
+        }
+        indexActualPortal = (indexActualPortal % _portalConnector.utilisablePortalType.Count + _portalConnector.utilisablePortalType.Count) % _portalConnector.utilisablePortalType.Count;
+        Debug.Log(indexActualPortal);
+        _portalConnector.portalType = _portalConnector.utilisablePortalType[indexActualPortal];
     }
 }
  

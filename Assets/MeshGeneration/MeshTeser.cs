@@ -18,6 +18,13 @@ public class MyMeshGenerator : MonoBehaviour
     public ColourGenerator _colourGenerator;
 
     [SerializeField] private VegetationPlacer vegetationPlacer;
+    [SerializeField] private PortalConnector portalConnector;
+
+    void Start()
+    {
+        portalConnector = GameObject.FindGameObjectWithTag("portalConnector").GetComponent<PortalConnector>();
+        GenerateGrid();
+    }
 
     public BMesh GenerateGrid()
     {
@@ -59,11 +66,8 @@ public class MyMeshGenerator : MonoBehaviour
             vegetationPlacer.PlaceVegetation(mesh, _elevationMinMax);
         }
 
-        return bm;
-    }
+        portalConnector.portalType = PortalType.Desert;
 
-    void Start()
-    {
-        GenerateGrid();
+        return bm;
     }
 }

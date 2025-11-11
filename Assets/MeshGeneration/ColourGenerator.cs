@@ -13,10 +13,7 @@ public class ColourGenerator
 
     public void UpdateElevation(MinMax elevationMinMax)
     {
-        if (_material == null)
-            Debug.Log("pasla");
-        else
-            Debug.Log("la");
+        if (_material != null)
             _material.SetVector("_ElevationMinMax", new Vector4(elevationMinMax.Min, elevationMinMax.Max));
     }
 }
