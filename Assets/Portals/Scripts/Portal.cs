@@ -8,7 +8,6 @@ public class SimplePortal : MonoBehaviour
     public MeshRenderer screen;
     public Transform destination;
     public Camera destinationCamera;
-    public PortalType portalType = PortalType.Desert;
     public GameObject createdMap;
 
     private Camera playerCam;

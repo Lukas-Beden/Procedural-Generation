@@ -22,18 +22,21 @@ public class DrawOnGround : MonoBehaviour
     public event Action<Mesh, GameObject> MeshCreated;
 
     public PortalConnector connector;
+    private InputHandler inputHandler;
 
     private void Start()
     {
         GameObject GOconnector = GameObject.FindGameObjectWithTag("portalConnector");
+        GameObject GOinputHandler = GameObject.FindGameObjectWithTag("Player");
         connector = GOconnector.GetComponent<PortalConnector>();
+        inputHandler = GOinputHandler.GetComponent<InputHandler>();
     }
     void Update()
-    {
+    {   
         var mouse = Mouse.current;
         if (mouse == null) return;
 
-        if (mouse.leftButton.wasPressedThisFrame)
+        if (inputHandler.DrawPressedThisFrame)
         {
             if (!connector.utilisablePortalType.Contains(connector.portalType))
             {
@@ -58,7 +61,7 @@ public class DrawOnGround : MonoBehaviour
             }
         }
 
-        if (mouse.leftButton.wasReleasedThisFrame)
+        if (inputHandler.DrawReleasedThisFrame)
         {
             if (!connector.utilisablePortalType.Contains(connector.portalType))
             {
@@ -80,6 +83,8 @@ public class DrawOnGround : MonoBehaviour
                 Mesh mesh = meshObj.GetComponent<MeshFilter>().mesh;
                 MeshCreated?.Invoke(mesh, meshObj);
             }
+
+            connector.portalTypeCreated = connector.portalType;
         }
     }
 

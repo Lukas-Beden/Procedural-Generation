@@ -82,7 +82,6 @@ public class FPSController : MonoBehaviour
             indexActualPortal--;
         }
         indexActualPortal = (indexActualPortal % _portalConnector.utilisablePortalType.Count + _portalConnector.utilisablePortalType.Count) % _portalConnector.utilisablePortalType.Count;
-        Debug.Log(indexActualPortal);
         _portalConnector.portalType = _portalConnector.utilisablePortalType[indexActualPortal];
     }
 }

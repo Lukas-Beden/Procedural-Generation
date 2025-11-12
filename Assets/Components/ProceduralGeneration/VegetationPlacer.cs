@@ -23,7 +23,7 @@ public class VegetationPlacer : MonoBehaviour
     [SerializeField] private float minTreeHeight = 0.3f;
     [SerializeField] private float maxTreeHeight = 0.8f;
     [SerializeField] private float yOffset = -10f;
-    [SerializeField] private float sampleDistance = 2f; // Sample every N vertices
+    [SerializeField] private float sampleDistance = 2f;
 
     [Header("Noise Settings")]
     [SerializeField] private int seed = 12345;
@@ -35,7 +35,6 @@ public class VegetationPlacer : MonoBehaviour
 
     private Transform vegetationParent;
 
-    // Cache for slope calculations
     private Dictionary<BMesh.Vertex, float> slopeCache = new Dictionary<BMesh.Vertex, float>();
 
     public PortalConnector portalConnector;

@@ -11,6 +11,7 @@ public class PortalConnector : MonoBehaviour
     public List<PortalType> utilisablePortalType;
     public Material portalMaterial;
     public PortalType portalType = PortalType.Plains;
+    public PortalType portalTypeCreated = PortalType.Plains;
 
     private Dictionary<PortalType, GameObject> mapPrefabsByType = new();
     public Dictionary<PortalType, Vector3> mapOffset = new();
@@ -73,8 +74,9 @@ public class PortalConnector : MonoBehaviour
             Destroy(oldPortal.destination.gameObject);
         }
 
+        portalTypeCreated = portalType;
+
         var portal = meshObject.AddComponent<SimplePortal>();
-        portal.portalType = portalType;
         portal.SetPortalMesh(meshObject);
 
         if (portalMaterial != null)
@@ -118,12 +120,10 @@ public class PortalConnector : MonoBehaviour
 
         foreach (PortalType obtPortalType in portalTypeObtained)
         {
-            if (obtPortalType != portalType)
+            if (obtPortalType != portalTypeCreated)
             {
                 utilisablePortalType.Add(obtPortalType);
             }
         }
-
-        //portalType = utilisablePortalType[0];
     }
 }
