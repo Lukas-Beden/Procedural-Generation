@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PortalConnector : MonoBehaviour
@@ -7,14 +7,33 @@ public class PortalConnector : MonoBehaviour
     public DrawOnGround drawer;
     public GameObject destinationPrefab;
     public List<GameObject> mapPrefabs;
-    public Dictionary<PortalType, GameObject> mapPrefabsByType = new();
+    public List<PortalType> portalTypeObtained;
+    public List<PortalType> utilisablePortalType;
     public Material portalMaterial;
-    public PortalType portalType = PortalType.Mountain; 
-    public Vector3 destinationOffset = new Vector3(0, 1, 0);
+    public PortalType portalType = PortalType.Plains;
+
+    private Dictionary<PortalType, GameObject> mapPrefabsByType = new();
+    public Dictionary<PortalType, Vector3> mapOffset = new();
 
     private void Awake()
     {
-        SetDictionnaryMapPrefab();
+        SetDictionaryMapPrefab();
+    }
+
+    private void Start()
+    {
+        if (mapPrefabsByType.ContainsKey(portalType))
+        {
+            Vector3 startPosition = mapOffset[portalType];
+            GameObject startingMap = Instantiate(mapPrefabsByType[portalType], startPosition, Quaternion.identity);
+            SimplePortal.SetCurrentMap(startingMap);
+
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                player.transform.position = startPosition + new Vector3(0, 10f, 0);
+            }
+        }
     }
 
     private void OnEnable()
@@ -29,45 +48,82 @@ public class PortalConnector : MonoBehaviour
             drawer.MeshCreated -= OnMeshCreated;
     }
 
-    private void SetDictionnaryMapPrefab()
+    private void SetDictionaryMapPrefab()
     {
         mapPrefabsByType[PortalType.Plains] = mapPrefabs[0];
         mapPrefabsByType[PortalType.Desert] = mapPrefabs[1];
         mapPrefabsByType[PortalType.Mountain] = mapPrefabs[2];
+        mapOffset[PortalType.Plains] = new Vector3(0, 10000, 0);
+        mapOffset[PortalType.Desert] = new Vector3(0, 0, 0);
+        mapOffset[PortalType.Mountain] = new Vector3(0, -10000, 0);
     }
 
     private void OnMeshCreated(Mesh mesh, GameObject meshObject)
     {
-        if (meshObject == null) return;
+        if (!portalTypeObtained.Contains(portalType))
+        {
+            return;
+        }
+
+        SimplePortal.DeleteLastPortalMap();
+
+        foreach (var oldPortal in FindObjectsOfType<SimplePortal>())
+        {
+            Destroy(oldPortal.gameObject);
+            Destroy(oldPortal.destination.gameObject);
+        }
+
+        var portal = meshObject.AddComponent<SimplePortal>();
+        portal.portalType = portalType;
+        portal.SetPortalMesh(meshObject);
 
         if (portalMaterial != null)
         {
-            MeshRenderer renderer = meshObject.GetComponent<MeshRenderer>();
+            var renderer = meshObject.GetComponent<MeshRenderer>();
             if (renderer != null)
                 renderer.material = new Material(portalMaterial);
         }
 
+        GameObject newMap = null;
         GameObject destinationInstance = null;
         Camera destCam = null;
-        GameObject newMap = null;
 
-        if (destinationPrefab != null)
+        if (destinationPrefab != null && mapPrefabsByType.ContainsKey(portalType))
         {
-            Vector3 mapOffset = destinationOffset;
-            mapOffset.y = 0;
-            newMap = Instantiate(mapPrefabsByType[portalType], mapOffset, Quaternion.identity); 
-            destinationInstance = Instantiate(destinationPrefab, destinationOffset, Quaternion.identity);
+            Vector3 destinationOffset = mapOffset[portalType];
+            destinationOffset.y += 100;
+            newMap = Object.Instantiate(mapPrefabsByType[portalType], mapOffset[portalType], Quaternion.identity);
+
+            destinationInstance = Object.Instantiate(destinationPrefab, destinationOffset, Quaternion.identity);
             destCam = destinationInstance.GetComponentInChildren<Camera>();
             if (destCam != null)
                 destCam.enabled = false;
         }
 
-        SimplePortal portal = meshObject.AddComponent<SimplePortal>();
-        portal.SetPortalMesh(meshObject);
+        if (destinationInstance == null || destCam == null)
+        {
+            Debug.LogWarning("Destination or camera missing for portal.");
+            return;
+        }
 
-        portal.portalType = portalType;
-        portal.Initialize(destinationInstance?.transform, destCam);
-
+        portal.Initialize(destinationInstance.transform, destCam);
         portal.createdMap = newMap;
+
+        SimplePortal.SetCurrentMap(newMap);
+    }
+
+    public void ChangePortalList()
+    {
+        utilisablePortalType.Clear();
+
+        foreach (PortalType obtPortalType in portalTypeObtained)
+        {
+            if (obtPortalType != portalType)
+            {
+                utilisablePortalType.Add(obtPortalType);
+            }
+        }
+
+        //portalType = utilisablePortalType[0];
     }
 }

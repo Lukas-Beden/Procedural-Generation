@@ -21,6 +21,13 @@ public class DrawOnGround : MonoBehaviour
 
     public event Action<Mesh, GameObject> MeshCreated;
 
+    public PortalConnector connector;
+
+    private void Start()
+    {
+        GameObject GOconnector = GameObject.FindGameObjectWithTag("portalConnector");
+        connector = GOconnector.GetComponent<PortalConnector>();
+    }
     void Update()
     {
         var mouse = Mouse.current;
@@ -28,6 +35,10 @@ public class DrawOnGround : MonoBehaviour
 
         if (mouse.leftButton.wasPressedThisFrame)
         {
+            if (!connector.utilisablePortalType.Contains(connector.portalType))
+            {
+                return;
+            }
             points.Clear();
             line.positionCount = 0;
             isDrawing = true;
@@ -35,7 +46,7 @@ public class DrawOnGround : MonoBehaviour
 
         if (isDrawing)
         {
-            if (Physics.Raycast(cam.ScreenPointToRay(mouse.position.ReadValue()), out RaycastHit hit, 100f, groundMask))
+            if (Physics.Raycast(cam.ScreenPointToRay(mouse.position.ReadValue()), out RaycastHit hit, 5f, groundMask))
             {
                 Vector3 point = hit.point;
                 if (points.Count == 0 || Vector3.Distance(points[^1], point) > minPointDistance)
@@ -49,6 +60,10 @@ public class DrawOnGround : MonoBehaviour
 
         if (mouse.leftButton.wasReleasedThisFrame)
         {
+            if (!connector.utilisablePortalType.Contains(connector.portalType))
+            {
+                return;
+            }
             SmoothPoints(points);
             isDrawing = false;
             GameObject meshObj = CreateMeshFromPoints(points);
@@ -86,7 +101,6 @@ public class DrawOnGround : MonoBehaviour
         smoothed.Add(rawPoints[^1]);
         return smoothed;
     }
-
 
     GameObject CreateMeshFromPoints(List<Vector3> points3D)
     {
