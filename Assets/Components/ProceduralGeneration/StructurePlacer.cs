@@ -31,7 +31,7 @@ public class StructurePlacer : MonoBehaviour
             new Vector3(randomService.Range(0 + prefabCol.size.x, generator.width - prefabCol.size.x),
                 connector.mapOffset[connector.portalTypeCreated].y,
                 randomService.Range(0 + prefabCol.size.z, generator.height - prefabCol.size.z)),
-            Quaternion.identity);
+            Quaternion.identity, gameObject.transform);
 
         AdjustChildrenHeightToTerrain(structCreated.transform);
 
@@ -57,7 +57,7 @@ public class StructurePlacer : MonoBehaviour
 
         foreach (Transform child in parent)
         {
-            if (child.gameObject.name == "crypt-large-roof") { continue; }
+            if (child.gameObject.name == "crypt-large-roof" || child.gameObject.name == "Exit") { continue; }
             Vector3 pos = child.position;
             float terrainHeight = GetTerrainHeightAt(mesh, pos.x, pos.z);
             pos.y = terrainHeight + connector.mapOffset[connector.portalTypeCreated].y;

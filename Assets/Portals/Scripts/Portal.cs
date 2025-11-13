@@ -61,7 +61,7 @@ public class SimplePortal : MonoBehaviour
 
         portalCamPos.y = destination.transform.position.y;
 
-        destinationCamera.transform.SetPositionAndRotation(portalCamPos, m.rotation);
+        destinationCamera.transform.SetPositionAndRotation(new Vector3(GameObject.FindGameObjectWithTag("Player").transform.position.x, portalCamPos.y, GameObject.FindGameObjectWithTag("Player").transform.position.z), m.rotation);
         destinationCamera.projectionMatrix = playerCam.projectionMatrix;
         destinationCamera.Render();
 
