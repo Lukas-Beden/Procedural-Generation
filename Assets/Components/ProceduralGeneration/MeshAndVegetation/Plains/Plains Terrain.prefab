@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9201543931029245836}
   - component: {fileID: 3524988820319334706}
   - component: {fileID: 296840233560110014}
+  - component: {fileID: -6812840587148137564}
   m_Layer: 3
   m_Name: Plains Terrain
   m_TagString: mapPrefabs
@@ -103,7 +104,6 @@ MonoBehaviour:
   width: 100
   height: 100
   noiseGenerator: {fileID: 11400000, guid: 8da8edb057ac4b84fba16a6eb2f36095, type: 2}
-  _prefabGrass: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
   _material: {fileID: 2100000, guid: 8a2471fc8e0f64144bc474581d869380, type: 2}
   gradient:
     serializedVersion: 2
@@ -136,6 +136,8 @@ MonoBehaviour:
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   vegetationPlacer: {fileID: 296840233560110014}
+  portalConnector: {fileID: 0}
+  structPlacer: {fileID: -6812840587148137564}
 --- !u!114 &296840233560110014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,16 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e81f47dce3e5a45995f92cbe819509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassPrefab: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+  grassPrefab: {fileID: 4582061973708097120, guid: 06b6889f0b34b4440bf74e41fef12efa, type: 3}
   treePrefabs:
-  - {fileID: 919132149155446097, guid: 92fb15add50f5df4ea5f2979be8a1acb, type: 3}
-  - {fileID: 919132149155446097, guid: 642ff346fbb34064b8ca44c317b31f4a, type: 3}
-  - {fileID: 919132149155446097, guid: 93ac61a2f53010e489d3be5cf26c9240, type: 3}
+  - {fileID: 1921356743799483089, guid: 7d3e866ce6c8b9c49bebb0932208e715, type: 3}
+  - {fileID: 1728717058017473428, guid: 7da9ef8aa6e0a3f429340bf49d1dea4b, type: 3}
+  - {fileID: 4012856782179717033, guid: ad6d81527f0be55409cf1166254ff6e5, type: 3}
   bushPrefabs:
-  - {fileID: 919132149155446097, guid: 2278e8d44be66364289409037be9045d, type: 3}
+  - {fileID: 2592722513358865629, guid: a2464b8e9b99b3d449869d62f3c867ed, type: 3}
   flowerPrefabs:
-  - {fileID: 919132149155446097, guid: b73448990852d534da307d843c6f7064, type: 3}
-  - {fileID: 919132149155446097, guid: 3046ec443daf14d40a1b076e63619d22, type: 3}
+  - {fileID: 8879100490215324940, guid: a01ca05490854fc4590cf6a35b3582a8, type: 3}
+  - {fileID: 4956585051468191618, guid: e530151a1fab1424695090b9c67a1870, type: 3}
   grassDensity: 0.5
   treeDensity: 0.2
   bushDensity: 0.3
@@ -165,5 +167,21 @@ MonoBehaviour:
   minTreeHeight: 0.3
   maxTreeHeight: 0.8
   yOffset: 0
+  sampleDistance: 2
   seed: 12345
   portalConnector: {fileID: 0}
+--- !u!114 &-6812840587148137564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6944873434548090405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da683467d272184780524f8c5e7c9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  structure:
+  - {fileID: 5030268404587037482, guid: 9e21ca4976643d14e87db6130752703c, type: 3}
+  - {fileID: 5030268404587037482, guid: 9e21ca4976643d14e87db6130752703c, type: 3}

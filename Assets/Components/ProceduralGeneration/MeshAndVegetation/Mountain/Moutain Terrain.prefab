@@ -53,45 +53,69 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: bushDensity
+      value: 0.553
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: grassPrefab
       value: 
-      objectReference: {fileID: 6901301397117323794, guid: 48c64a637403c6b4d9412cb7b690e8dc, type: 3}
+      objectReference: {fileID: 3779870450763190555, guid: 496ef76a50672664587b5a1305197cc2, type: 3}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: treeDensity
+      value: 0.553
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: grassDensity
+      value: 0.0000001
+      objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: maxTreeHeight
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: bushPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: treePrefabs.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: flowerPrefabs.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: 'bushPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 856512442802094315, guid: 33e0229781589094db520ae4fecfde0f, type: 3}
+    - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
+      propertyPath: 'bushPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4978890121609894341, guid: cc47579fdfca6564ba3993fde50cef1c, type: 3}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'treePrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 8665454814296035553, guid: 55617228008ec13468efdb1320ff57bb, type: 3}
+      objectReference: {fileID: 4822431972316174437, guid: 455db9c7bcf874a41be6bdeb8a290459, type: 3}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'treePrefabs.Array.data[1]'
       value: 
-      objectReference: {fileID: 4347404478267446403, guid: 754ad8899d5084b43a8c3ce7e8029ec0, type: 3}
+      objectReference: {fileID: 1424832169858250790, guid: 9255ef51eba781941b9ee7753301ffa7, type: 3}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'treePrefabs.Array.data[2]'
       value: 
-      objectReference: {fileID: 6339453214001485032, guid: 51e6d31c5c3889242bb6e75d69ae1c6e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'flowerPrefabs.Array.data[0]'
       value: 
-      objectReference: {fileID: 3291077285857676783, guid: dc5912af60153cf42ab6674ab6f8c028, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'flowerPrefabs.Array.data[1]'
       value: 
-      objectReference: {fileID: 8848962985563241548, guid: a5bdc57cb4f089944a63c5ca86451d42, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6165983927759445219, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: 'flowerPrefabs.Array.data[2]'
       value: 
-      objectReference: {fileID: 7937773672729900071, guid: ba8443c12693c5c44a017e4f08006cbc, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: _material
       value: 
@@ -102,15 +126,15 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 4afff08431cdf754e8b90fe9c1dd77a2, type: 2}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.ctime0
-      value: 1542
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.ctime1
-      value: 30840
+      value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.ctime2
-      value: 43562
+      value: 65535
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.ctime3
@@ -122,39 +146,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key0.b
-      value: 0.15739588
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key0.g
-      value: 0.21475445
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key0.r
-      value: 0.254717
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key1.b
-      value: 0.36618903
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key1.g
-      value: 0.36618903
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key1.r
-      value: 0.3679245
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key2.b
-      value: 0.4716981
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key2.g
-      value: 0.4716981
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key2.r
-      value: 0.4716981
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.key3.b
@@ -182,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017779817347096175, guid: 930c1bd7470dd2942819692c3a2f10d1, type: 3}
       propertyPath: gradient.m_NumColorKeys
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

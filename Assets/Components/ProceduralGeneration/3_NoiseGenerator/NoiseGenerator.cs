@@ -106,7 +106,7 @@ namespace Components.ProceduralGeneration.SimpleRoomPlacement
 
         public void CreateNoise()
         {
-            _noise.SetSeed(RandomNumberGenerator.GetInt32(1000000));
+            _noise.SetSeed(RandomNumberGenerator.GetInt32(9999));
             _noise.SetNoiseType(_noiseType);
             _noise.SetFrequency(_frequency);
 

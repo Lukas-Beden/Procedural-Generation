@@ -51,23 +51,23 @@ public class VegetationPlacer : MonoBehaviour
 
     private void InitializeNoiseGenerators()
     {
-        densityNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
+        densityNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(9999));
         densityNoise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         densityNoise.SetFrequency(0.15f);
         densityNoise.SetFractalType(FastNoiseLite.FractalType.FBm);
         densityNoise.SetFractalOctaves(3);
 
-        typeNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
+        typeNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(9999));
         typeNoise.SetNoiseType(FastNoiseLite.NoiseType.Perlin);
         typeNoise.SetFrequency(0.2f);
 
-        clusterNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
+        clusterNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(9999));
         clusterNoise.SetNoiseType(FastNoiseLite.NoiseType.Cellular);
         clusterNoise.SetFrequency(0.25f);
         clusterNoise.SetCellularDistanceFunction(FastNoiseLite.CellularDistanceFunction.Euclidean);
         clusterNoise.SetCellularReturnType(FastNoiseLite.CellularReturnType.Distance2Add);
 
-        detailNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(1000000));
+        detailNoise = new FastNoiseLite(RandomNumberGenerator.GetInt32(9999));
         detailNoise.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         detailNoise.SetFrequency(0.8f);
     }

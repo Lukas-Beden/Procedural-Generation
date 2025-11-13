@@ -12,9 +12,12 @@ public class PortalConnector : MonoBehaviour
     public Material portalMaterial;
     public PortalType portalType = PortalType.Plains;
     public PortalType portalTypeCreated = PortalType.Plains;
+    public Vector2 destinationXY = new();
 
     private Dictionary<PortalType, GameObject> mapPrefabsByType = new();
     public Dictionary<PortalType, Vector3> mapOffset = new();
+
+    public bool hasStarted = false;
 
     private void Awake()
     {
@@ -93,7 +96,9 @@ public class PortalConnector : MonoBehaviour
         if (destinationPrefab != null && mapPrefabsByType.ContainsKey(portalType))
         {
             Vector3 destinationOffset = mapOffset[portalType];
+            destinationOffset.x += destinationXY.x;
             destinationOffset.y += 100;
+            destinationOffset.z += destinationXY.y;
             newMap = Object.Instantiate(mapPrefabsByType[portalType], mapOffset[portalType], Quaternion.identity);
 
             destinationInstance = Object.Instantiate(destinationPrefab, destinationOffset, Quaternion.identity);
