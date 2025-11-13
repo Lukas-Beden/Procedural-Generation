@@ -10,7 +10,7 @@ public class PyramidTeleportInside : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            Instantiate(pyramidIndoors, new Vector3(1000,0,1000), Quaternion.identity);
+            Instantiate(pyramidIndoors, new Vector3(50,5000,50), Quaternion.identity);
             
             indoorSpawnPoint = GameObject.Find("Indoor Spawnpoint");
 

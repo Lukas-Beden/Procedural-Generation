@@ -74,6 +74,7 @@ public class FPSController : MonoBehaviour
 
     void ChangePaintColor()
     {
+        if (_portalConnector.utilisablePortalType.Count <= 0) { return; }
         if (_inputHandler.ChangePaint > 0)
         {
             indexActualPortal++;

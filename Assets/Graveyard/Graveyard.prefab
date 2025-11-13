@@ -24156,17 +24156,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8330204720896751655}
     m_Modifications:
-    - target: {fileID: 1674886551961507687, guid: f191f32236c0e92469d983a958af2862, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 50
+    - target: {fileID: 42504404265297058, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
-    - target: {fileID: 1674886551961507687, guid: f191f32236c0e92469d983a958af2862, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 50
+    - target: {fileID: 313132022120704524, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
-    - target: {fileID: 1674886551961507687, guid: f191f32236c0e92469d983a958af2862, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 50
+    - target: {fileID: 756575515506475734, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 1674886551961507687, guid: f191f32236c0e92469d983a958af2862, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24208,13 +24208,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1674886551961507687, guid: f191f32236c0e92469d983a958af2862, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2050744068397256157, guid: f191f32236c0e92469d983a958af2862, type: 3}
       propertyPath: m_Name
       value: Bucket
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648265694412709103, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883615559873164542, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265904915108528590, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561796291144229848, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035115143576585924, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5514604053908474272, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134369110599831431, guid: f191f32236c0e92469d983a958af2862, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
