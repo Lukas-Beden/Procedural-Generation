@@ -57,7 +57,7 @@ public class StructurePlacer : MonoBehaviour
 
         foreach (Transform child in parent)
         {
-            if (child.gameObject.name == "crypt-large-roof" || child.gameObject.name == "Exit") { continue; }
+            if (child.gameObject.name == "crypt-large-roof" || child.gameObject.name == "Exit" || child.gameObject.name == "Bucket") { continue; }
             Vector3 pos = child.position;
             float terrainHeight = GetTerrainHeightAt(mesh, pos.x, pos.z);
             pos.y = terrainHeight + connector.mapOffset[connector.portalTypeCreated].y;
