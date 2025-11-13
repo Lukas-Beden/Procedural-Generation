@@ -1,5 +1,6 @@
         using Components.ProceduralGeneration.SimpleRoomPlacement;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using static BMesh;
 
@@ -8,7 +9,7 @@ public class MyMeshGenerator : MonoBehaviour
     public int width = 15;
     public int height = 15;
 
-    BMesh mesh;
+    public BMesh mesh;
 
     [SerializeField] private NoiseGenerator noiseGenerator;
     [SerializeField] private Material _material;
@@ -19,6 +20,7 @@ public class MyMeshGenerator : MonoBehaviour
 
     [SerializeField] private VegetationPlacer vegetationPlacer;
     [SerializeField] private PortalConnector portalConnector;
+    [SerializeField] private StructurePlacer structPlacer;
 
     void Start()
     {
@@ -67,6 +69,23 @@ public class MyMeshGenerator : MonoBehaviour
         }
 
         portalConnector.portalType = PortalType.Desert;
+
+        portalConnector.destinationXY = new Vector2(width / 2, height / 2);
+
+        if (!portalConnector.hasStarted)
+        {
+            portalConnector.hasStarted = true;
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                Vector3 startPosition = player.transform.position;
+                startPosition.x += width / 2;
+                startPosition.z += height / 2;
+                player.transform.position = startPosition + new Vector3(0, 10f, 0);
+            }
+        }
+
+        structPlacer.Place();
 
         return bm;
     }

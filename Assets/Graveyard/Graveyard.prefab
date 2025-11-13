@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7034716014883371092}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 3977596312601514721}
   m_Layer: 0
   m_Name: Trees
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4793693062325080844}
   m_Layer: 0
   m_Name: Rocks
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 8179573548016158340}
   m_Layer: 0
   m_Name: Benches
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 71861158322905402}
   m_Layer: 0
   m_Name: Pumpkins
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 4354180932592919774}
   m_Layer: 0
   m_Name: Lightposts
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 2451477607147149810}
   m_Layer: 0
   m_Name: BrickWall
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 7229273415029704713}
   m_Layer: 0
   m_Name: Crypts
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 5165558592804688824}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -620,115 +620,6 @@ Transform:
   - {fileID: 3193030784568359782}
   m_Father: {fileID: 8330204720896751655}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5011702524785912352
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6079491431665074350}
-  - component: {fileID: 3705105297635953156}
-  - component: {fileID: 6950422372158494722}
-  - component: {fileID: 8755976211605376679}
-  m_Layer: 3
-  m_Name: TempGround
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6079491431665074350
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5011702524785912352}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1608887, y: 0, z: -7.9867096}
-  m_LocalScale: {x: 3.664362, y: 3.8126073, z: 3.9930992}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8330204720896751655}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3705105297635953156
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5011702524785912352}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6950422372158494722
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5011702524785912352}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5f0e76537fda6be48901592432d6f506, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8755976211605376679
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5011702524785912352}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &5030268404587037482
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,9 +629,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8330204720896751655}
+  - component: {fileID: 8460112860393871367}
   m_Layer: 0
   m_Name: Graveyard
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -770,9 +662,29 @@ Transform:
   - {fileID: 7034716014883371092}
   - {fileID: 7252512256302231540}
   - {fileID: 4354180932592919774}
-  - {fileID: 6079491431665074350}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8460112860393871367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030268404587037482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 36.922676, y: 76.97612, z: 40.22731}
+  m_Center: {x: -3.1938782, y: -6.0801983, z: -7.9229965}
 --- !u!1 &5355861371815784538
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +696,7 @@ GameObject:
   - component: {fileID: 3193030784568359782}
   m_Layer: 0
   m_Name: RoadPatch
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -815,7 +727,7 @@ GameObject:
   - component: {fileID: 3301416981255868782}
   m_Layer: 0
   m_Name: Gravestones
-  m_TagString: Untagged
+  m_TagString: veg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -910,6 +822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -971,6 +887,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1034,6 +954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1096,6 +1020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1157,6 +1085,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1236,6 +1168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1314,6 +1250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1375,6 +1315,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1438,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1459,6 +1407,10 @@ PrefabInstance:
     - target: {fileID: 8234066228687960849, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
       propertyPath: m_Name
       value: rocks-tall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234066228687960849, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8723075792676594091, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1562,6 +1514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1623,6 +1579,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1686,6 +1646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1707,6 +1671,10 @@ PrefabInstance:
     - target: {fileID: 7282755629525809825, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
       propertyPath: m_Name
       value: gravestone-cross-large (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282755629525809825, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 7951768166180118555, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1810,6 +1778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1871,6 +1843,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1934,6 +1910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1995,6 +1975,10 @@ PrefabInstance:
     - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
       propertyPath: m_Name
       value: gravestone-bevel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2058,6 +2042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2079,6 +2067,10 @@ PrefabInstance:
     - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_Name
       value: rocks (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3134672172235520111, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2182,6 +2174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2243,6 +2239,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2306,6 +2306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2327,6 +2331,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -2438,6 +2446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2516,6 +2528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2577,6 +2593,10 @@ PrefabInstance:
     - target: {fileID: 8020760621528125598, guid: 503a209ce3e12044cb709e6bdca1bf38, type: 3}
       propertyPath: m_Name
       value: crypt-b (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8020760621528125598, guid: 503a209ce3e12044cb709e6bdca1bf38, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2640,6 +2660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2701,6 +2725,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2764,6 +2792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2825,6 +2857,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2888,6 +2924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt-a (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133562618970373867, guid: e69e25923a1860a4a9db34e2964a06fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2949,6 +2989,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3012,6 +3056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3073,6 +3121,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3152,6 +3204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3230,6 +3286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3291,6 +3351,10 @@ PrefabInstance:
     - target: {fileID: 4408752400633474910, guid: 3912543dd3dd74a44bc140cdf9b730fa, type: 3}
       propertyPath: m_Name
       value: trunk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4408752400633474910, guid: 3912543dd3dd74a44bc140cdf9b730fa, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3354,6 +3418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3415,6 +3483,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3478,6 +3550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3539,6 +3615,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3602,6 +3682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3663,6 +3747,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3742,6 +3830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3803,6 +3895,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3866,6 +3962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3927,6 +4027,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3990,6 +4094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4051,6 +4159,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (107)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4130,6 +4242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4192,6 +4308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3286074464828713917, guid: 2bf0338a89f75724bbc1a478c764ac0f, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4253,6 +4373,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4332,6 +4456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4393,6 +4521,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4456,6 +4588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4517,6 +4653,10 @@ PrefabInstance:
     - target: {fileID: 1979544081908187228, guid: 8ca1ce3708dc9ca419f18ed8cc438db0, type: 3}
       propertyPath: m_Name
       value: gravestone-cross
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979544081908187228, guid: 8ca1ce3708dc9ca419f18ed8cc438db0, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4580,6 +4720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4598,9 +4742,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3301416981255868782}
     m_Modifications:
+    - target: {fileID: 7585261732502745381, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_Name
       value: grave-border (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8945202440713791157, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4704,6 +4856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt-a (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133562618970373867, guid: e69e25923a1860a4a9db34e2964a06fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4765,6 +4921,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4828,6 +4988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4890,6 +5054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (132)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4911,6 +5079,10 @@ PrefabInstance:
     - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_Name
       value: bench-damaged (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 6887084007351714021, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5014,6 +5186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5075,6 +5251,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (121)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5154,6 +5334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5215,6 +5399,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5278,6 +5466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5339,6 +5531,10 @@ PrefabInstance:
     - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
       propertyPath: m_Name
       value: gravestone-bevel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5402,6 +5598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5463,6 +5663,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5526,6 +5730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5547,6 +5755,10 @@ PrefabInstance:
     - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_Name
       value: rocks (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3134672172235520111, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5650,6 +5862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5711,6 +5927,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5774,6 +5994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5835,6 +6059,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5914,6 +6142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5935,6 +6167,10 @@ PrefabInstance:
     - target: {fileID: 8614595243980782439, guid: 4ff1b687f9813084c9d6f17999818296, type: 3}
       propertyPath: m_Name
       value: pine-fall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8614595243980782439, guid: 4ff1b687f9813084c9d6f17999818296, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8991120099298386397, guid: 4ff1b687f9813084c9d6f17999818296, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6038,6 +6274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (135)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6099,6 +6339,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6178,6 +6422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6239,6 +6487,14 @@ PrefabInstance:
     - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
       propertyPath: m_Name
       value: lightpost-single (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6302,6 +6558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6364,6 +6624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6385,6 +6649,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6447,6 +6715,10 @@ PrefabInstance:
     - target: {fileID: 7282755629525809825, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
       propertyPath: m_Name
       value: gravestone-cross-large
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282755629525809825, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 7951768166180118555, guid: 6ed0859ab540e0043aa7640715251d99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6550,6 +6822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6611,6 +6887,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6690,6 +6970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6751,6 +7035,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6830,6 +7118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6892,6 +7184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6913,6 +7209,10 @@ PrefabInstance:
     - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_Name
       value: bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8750725908842546983, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_LocalScale.x
@@ -7020,6 +7320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7098,6 +7402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7160,6 +7468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7221,6 +7533,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7300,6 +7616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7362,6 +7682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7423,6 +7747,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7502,6 +7830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7580,6 +7912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7641,6 +7977,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
       propertyPath: m_Name
       value: grass 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7704,6 +8044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7765,6 +8109,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7828,6 +8176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7889,6 +8241,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7952,6 +8308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8014,6 +8374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8075,6 +8439,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8154,6 +8522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8175,6 +8547,10 @@ PrefabInstance:
     - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_Name
       value: brick-wall-curve-small (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 9191535775455587185, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8278,6 +8654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8339,6 +8719,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8402,6 +8786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8463,6 +8851,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8542,6 +8934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8620,6 +9016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8682,6 +9082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pine-fall-crooked (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9207695282770554533, guid: d630d4d753726cf4383a28fbae39e8e2, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8703,6 +9107,10 @@ PrefabInstance:
     - target: {fileID: 8331166524884185678, guid: 7440a952e58fe044387660faec39e482, type: 3}
       propertyPath: m_Name
       value: pine (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331166524884185678, guid: 7440a952e58fe044387660faec39e482, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8707128774655256820, guid: 7440a952e58fe044387660faec39e482, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8806,6 +9214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8867,6 +9279,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8930,6 +9346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt-a
       objectReference: {fileID: 0}
+    - target: {fileID: 9133562618970373867, guid: e69e25923a1860a4a9db34e2964a06fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8991,6 +9411,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9054,6 +9478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9115,6 +9543,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9178,6 +9610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9239,6 +9675,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
       propertyPath: m_Name
       value: grass 3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9302,6 +9742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9363,6 +9807,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9426,6 +9874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9447,6 +9899,10 @@ PrefabInstance:
     - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_Name
       value: bench (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8750725908842546983, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9550,6 +10006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9612,6 +10072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9673,6 +10137,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9752,6 +10220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9773,6 +10245,10 @@ PrefabInstance:
     - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_Name
       value: brick-wall-curve-small (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 9191535775455587185, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9876,6 +10352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9937,6 +10417,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (81)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10016,6 +10500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10077,6 +10565,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
       propertyPath: m_Name
       value: grass 3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10140,6 +10632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10201,6 +10697,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (102)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10264,6 +10764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10325,6 +10829,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10388,6 +10896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10449,6 +10961,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10512,6 +11028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10573,6 +11093,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (141)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10636,6 +11160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10697,6 +11225,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10760,6 +11292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10821,6 +11357,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10884,6 +11424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10945,6 +11489,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11008,6 +11556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11026,9 +11578,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4354180932592919774}
     m_Modifications:
+    - target: {fileID: 1656297138581280398, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108352860771943477, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_Name
       value: lightpost-double (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5338073642409974732, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11132,6 +11696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11153,6 +11721,10 @@ PrefabInstance:
     - target: {fileID: 8161471236478659372, guid: a21e5b978af39db46be4074f97e322e4, type: 3}
       propertyPath: m_Name
       value: trunk-long
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161471236478659372, guid: a21e5b978af39db46be4074f97e322e4, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8793434908762616214, guid: a21e5b978af39db46be4074f97e322e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11256,6 +11828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt
       objectReference: {fileID: 0}
+    - target: {fileID: 3286074464828713917, guid: 2bf0338a89f75724bbc1a478c764ac0f, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11274,9 +11850,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3301416981255868782}
     m_Modifications:
+    - target: {fileID: 7585261732502745381, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_Name
       value: grave-border (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8945202440713791157, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11380,6 +11964,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: lightpost-single (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11473,6 +12065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11491,6 +12087,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 71861158322905402}
     m_Modifications:
+    - target: {fileID: 254722173288334733, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3640636736299760146, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 4439537231159580320, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.765396
@@ -11531,9 +12135,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4618094113848755795, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037228734887378341, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685330774381157322, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 6105247125937286735, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
       propertyPath: m_Name
       value: PumpkinPatch02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105247125937286735, guid: ad04e51e374621347bb68e0a7f8d0802, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11597,6 +12217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11618,6 +12242,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -11729,6 +12357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (133)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11807,6 +12439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11868,6 +12504,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11931,6 +12571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11992,6 +12636,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12055,6 +12703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12116,6 +12768,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12195,6 +12851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12256,6 +12916,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12319,6 +12983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12380,6 +13048,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12443,6 +13115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12505,6 +13181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12526,6 +13206,10 @@ PrefabInstance:
     - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_Name
       value: bench-damaged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 6887084007351714021, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12629,6 +13313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12690,6 +13378,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12753,6 +13445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt-a (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9133562618970373867, guid: e69e25923a1860a4a9db34e2964a06fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12814,6 +13510,10 @@ PrefabInstance:
     - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
       propertyPath: m_Name
       value: gravestone-bevel (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12877,6 +13577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12938,6 +13642,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13001,6 +13709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (139)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13063,6 +13775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13081,9 +13797,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4354180932592919774}
     m_Modifications:
+    - target: {fileID: 68209134801311550, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009140266332973919, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 1153428590130135473, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
       propertyPath: m_Name
       value: lightpost-all
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153428590130135473, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 1966416749977721611, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13124,6 +13852,14 @@ PrefabInstance:
     - target: {fileID: 1966416749977721611, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2436102354476314621, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611311528170112540, guid: 17c5c184127471f49bc79d709caf31de, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13187,6 +13923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13248,6 +13988,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13327,6 +14071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13348,6 +14096,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13451,6 +14203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13469,9 +14225,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4354180932592919774}
     m_Modifications:
+    - target: {fileID: 1656297138581280398, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108352860771943477, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_Name
       value: lightpost-double (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5338073642409974732, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13575,6 +14343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13652,6 +14424,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13731,6 +14507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13749,6 +14529,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 71861158322905402}
     m_Modifications:
+    - target: {fileID: 395516579425830723, guid: 9687db0144e874f429093a839b2c0813, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 6513082015228977358, guid: 9687db0144e874f429093a839b2c0813, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13789,9 +14573,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6522098490290791739, guid: 9687db0144e874f429093a839b2c0813, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 7665566549820471465, guid: 9687db0144e874f429093a839b2c0813, type: 3}
       propertyPath: m_Name
       value: PumpkinPatch01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665566549820471465, guid: 9687db0144e874f429093a839b2c0813, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288429884762973292, guid: 9687db0144e874f429093a839b2c0813, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13855,6 +14651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13916,6 +14716,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13979,6 +14783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (138)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14040,6 +14848,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
       propertyPath: m_Name
       value: grass 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14103,6 +14915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14164,6 +14980,10 @@ PrefabInstance:
     - target: {fileID: 5752721929807710568, guid: ae3c978d603efa44fa44688fb4ea6639, type: 3}
       propertyPath: m_Name
       value: gravestone-broken (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752721929807710568, guid: ae3c978d603efa44fa44688fb4ea6639, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14227,6 +15047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (140)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14288,6 +15112,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (134)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14351,6 +15179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14412,6 +15244,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14491,6 +15327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14512,6 +15352,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -14623,6 +15467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14684,6 +15532,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14747,6 +15599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14768,6 +15624,10 @@ PrefabInstance:
     - target: {fileID: 8331166524884185678, guid: 7440a952e58fe044387660faec39e482, type: 3}
       propertyPath: m_Name
       value: pine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331166524884185678, guid: 7440a952e58fe044387660faec39e482, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8707128774655256820, guid: 7440a952e58fe044387660faec39e482, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14830,6 +15690,10 @@ PrefabInstance:
     - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_Name
       value: bench (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8750725908842546983, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14933,6 +15797,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: lightpost-single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15026,6 +15898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15044,9 +15920,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3301416981255868782}
     m_Modifications:
+    - target: {fileID: 7585261732502745381, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_Name
       value: grave-border (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8945202440713791157, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15150,6 +16034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15211,6 +16099,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
       propertyPath: m_Name
       value: grass 3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15274,6 +16166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15335,6 +16231,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (146)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15398,6 +16298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15459,6 +16363,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15522,6 +16430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15543,6 +16455,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15646,6 +16562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15707,6 +16627,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15770,6 +16694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15831,6 +16759,10 @@ PrefabInstance:
     - target: {fileID: 5752721929807710568, guid: ae3c978d603efa44fa44688fb4ea6639, type: 3}
       propertyPath: m_Name
       value: gravestone-broken (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752721929807710568, guid: ae3c978d603efa44fa44688fb4ea6639, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15894,6 +16826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (129)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15956,6 +16892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15974,9 +16914,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4354180932592919774}
     m_Modifications:
+    - target: {fileID: 1656297138581280398, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108352860771943477, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_Name
       value: lightpost-double
+      objectReference: {fileID: 0}
+    - target: {fileID: 4710612509412327798, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5338073642409974732, guid: f3f308f8cd916da4c8f2f74316ad7d9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16080,6 +17032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (136)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16141,6 +17097,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (114)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16204,6 +17164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crypt-b
       objectReference: {fileID: 0}
+    - target: {fileID: 8020760621528125598, guid: 503a209ce3e12044cb709e6bdca1bf38, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16265,6 +17229,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16328,6 +17296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16389,6 +17361,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16452,6 +17428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (143)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16514,6 +17494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16575,6 +17559,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16654,6 +17642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16715,6 +17707,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16794,6 +17790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16856,6 +17856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16917,6 +17921,14 @@ PrefabInstance:
     - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
       propertyPath: m_Name
       value: lightpost-single (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17011,6 +18023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shovel-dirt
       objectReference: {fileID: 0}
+    - target: {fileID: 4141840797400114091, guid: 30100c579cfd8d6498bf8491f8688071, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17072,6 +18088,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17135,6 +18155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone-bevel
       objectReference: {fileID: 0}
+    - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17197,6 +18221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17258,6 +18286,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17337,6 +18369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17398,6 +18434,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (142)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17461,6 +18501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17522,6 +18566,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (144)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17585,6 +18633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17646,6 +18698,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (119)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17709,6 +18765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17730,6 +18790,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -17800,6 +18864,10 @@ PrefabInstance:
     - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_Name
       value: bench-damaged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113643945098041951, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 6887084007351714021, guid: d2c602ae6241a7e4991ac5af978408fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17903,6 +18971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17964,6 +19036,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (145)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18027,6 +19103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pine-fall-crooked
       objectReference: {fileID: 0}
+    - target: {fileID: 9207695282770554533, guid: d630d4d753726cf4383a28fbae39e8e2, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18048,6 +19128,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -18159,6 +19243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18221,6 +19309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18242,6 +19334,10 @@ PrefabInstance:
     - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_Name
       value: bench (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8750725908842546983, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18361,6 +19457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18382,6 +19482,10 @@ PrefabInstance:
     - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_Name
       value: rocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363060594062795477, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3134672172235520111, guid: 93e9217c40e3dc64ebdd69e18355ea2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18485,6 +19589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone-bevel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1965353773159625764, guid: 0c96830b806fa0c4cbc95b6b7c0b9a5c, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18546,6 +19654,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18609,6 +19721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18670,6 +19786,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18733,6 +19853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18794,6 +19918,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18857,6 +19985,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18918,6 +20050,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18981,6 +20117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19043,6 +20183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19064,6 +20208,10 @@ PrefabInstance:
     - target: {fileID: 8234066228687960849, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
       propertyPath: m_Name
       value: rocks-tall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234066228687960849, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8723075792676594091, guid: 4abc39d200b15904db354cc22202a53c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19167,6 +20315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19188,6 +20340,10 @@ PrefabInstance:
     - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_Name
       value: brick-wall-curve-small (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 9191535775455587185, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19291,6 +20447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19352,6 +20512,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19415,6 +20579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19433,9 +20601,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3301416981255868782}
     m_Modifications:
+    - target: {fileID: 7585261732502745381, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_Name
       value: grave-border
+      objectReference: {fileID: 0}
+    - target: {fileID: 8604248676334025743, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8945202440713791157, guid: 6217d06d0af63264a9a0c4de5282f80b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19498,6 +20674,10 @@ PrefabInstance:
     - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_Name
       value: grave (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333615801433097959, guid: 5584757e3053c73478d5cca61d191124, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 3110152917086690397, guid: 5584757e3053c73478d5cca61d191124, type: 3}
       propertyPath: m_LocalScale.x
@@ -19568,6 +20748,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19671,6 +20855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19748,6 +20936,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19827,6 +21019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19888,6 +21084,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19951,6 +21151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone-cross (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1979544081908187228, guid: 8ca1ce3708dc9ca419f18ed8cc438db0, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20012,6 +21216,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (94)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20075,6 +21283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20137,6 +21349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20158,6 +21374,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20220,6 +21440,10 @@ PrefabInstance:
     - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_Name
       value: brick-wall-curve-small
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414190553383793099, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 9191535775455587185, guid: e7c2f275a8eb7c042905ca2bd319bf83, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20323,6 +21547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20400,6 +21628,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20479,6 +21711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20540,6 +21776,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20619,6 +21859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20697,6 +21941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20758,6 +22006,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20837,6 +22089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20898,6 +22154,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20961,6 +22221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21022,6 +22286,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21085,6 +22353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21146,6 +22418,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21209,6 +22485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21227,9 +22507,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8330204720896751655}
     m_Modifications:
+    - target: {fileID: 448460756897433887, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 1910493876146326750, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3108549521075544556, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     - target: {fileID: 7274845757305745597, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
       propertyPath: m_Name
       value: crypt-large
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274845757305745597, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8052050208332655111, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
       propertyPath: m_LocalScale.x
@@ -21278,6 +22574,14 @@ PrefabInstance:
     - target: {fileID: 8052050208332655111, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8400484851787007911, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133562618970373867, guid: 14b59fb597ddd6542b78788d1cdfa427, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21340,6 +22644,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21419,6 +22727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21480,6 +22792,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21543,6 +22859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pine-crooked
       objectReference: {fileID: 0}
+    - target: {fileID: 5288577225842747403, guid: 7ddbb9c0c779de6489a5b066632ebf41, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21604,6 +22924,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
       propertyPath: m_Name
       value: grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21667,6 +22991,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: lightpost-single (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21728,6 +23060,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21791,6 +23127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21852,6 +23192,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21915,6 +23259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21976,6 +23324,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
       propertyPath: m_Name
       value: grass 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 395b27abb43ab1a4b92c1424389f06d4, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22039,6 +23391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22100,6 +23456,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (137)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22163,6 +23523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22224,6 +23588,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22303,6 +23671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22324,6 +23696,10 @@ PrefabInstance:
     - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_Name
       value: bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231175446858718621, guid: dd469d9deacae434abe7afd38af38829, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 8750725908842546983, guid: dd469d9deacae434abe7afd38af38829, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22427,6 +23803,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22448,6 +23828,10 @@ PrefabInstance:
     - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_Name
       value: brick-wall-end (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4618094572980556448, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     - target: {fileID: 5430518885480269850, guid: 316ac34180cbc6f4bae15293e7bc393d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22551,6 +23935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22612,6 +24000,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
       propertyPath: m_Name
       value: grass (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a891be4b42ad6d748ac1a77e9e67c9ea, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22675,6 +24067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22736,6 +24132,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22799,6 +24199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22860,6 +24264,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22923,6 +24331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone-cross (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1979544081908187228, guid: 8ca1ce3708dc9ca419f18ed8cc438db0, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22985,6 +24397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23046,6 +24462,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (125)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23125,6 +24545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23186,6 +24610,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
       propertyPath: m_Name
       value: grass 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3aa47f57b407a844f99763f5c77fbe85, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23249,6 +24677,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: lightpost-single
       objectReference: {fileID: 0}
+    - target: {fileID: 2141523818205273611, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
+    - target: {fileID: 3716129849234952591, guid: c7187c85a6bb6604f8c51a7bd8664bcb, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23310,6 +24746,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (103)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23373,6 +24813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (128)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23434,6 +24878,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23497,6 +24945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23558,6 +25010,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23621,6 +25077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23682,6 +25142,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23745,6 +25209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23806,6 +25274,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23885,6 +25357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23946,6 +25422,10 @@ PrefabInstance:
     - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
       propertyPath: m_Name
       value: road (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24009,6 +25489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: brick-wall (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24070,6 +25554,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24133,6 +25621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone-broken
       objectReference: {fileID: 0}
+    - target: {fileID: 5752721929807710568, guid: ae3c978d603efa44fa44688fb4ea6639, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24194,6 +25686,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24257,6 +25753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3034838655323349810, guid: 99702e13612610a48ba9470d648ae621, type: 3}
+      propertyPath: m_TagString
+      value: veg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24318,6 +25818,10 @@ PrefabInstance:
     - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
       propertyPath: m_Name
       value: brick-wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734200486488401716, guid: c80c4d517c07fbf4cad6986ee321742e, type: 3}
+      propertyPath: m_TagString
+      value: veg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

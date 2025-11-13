@@ -22,7 +22,7 @@ public class FPSController : MonoBehaviour
 
     private void Awake()
     {
-        //_portalConnector = GameObject.FindGameObjectWithTag("portalConnector").GetComponent<PortalConnector>();
+        _portalConnector = GameObject.FindGameObjectWithTag("portalConnector").GetComponent<PortalConnector>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,7 +38,7 @@ public class FPSController : MonoBehaviour
         Move();
         Jump();
         Look();
-        //ChangePaintColor();
+        ChangePaintColor();
     }
 
     void Move()

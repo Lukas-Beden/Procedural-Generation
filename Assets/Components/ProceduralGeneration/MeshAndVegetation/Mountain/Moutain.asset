@@ -16,11 +16,11 @@ MonoBehaviour:
   _noiseType: 0
   _seed: 7
   _frequency: 0.01
-  _amplitude: 20
+  _amplitude: 4.8
   _fractalType: 1
-  _fractalOctaves: 9
-  _lacunarity: 2.26
-  _gain: 0.52
+  _fractalOctaves: 5
+  _lacunarity: 1.57
+  _gain: 0.54
   _wStrength: 0
   _ppStrength: 0
   _cellularDistanceFunction: 1
