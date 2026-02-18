@@ -4,6 +4,10 @@ Jeu d'exploration en Unity où les niveaux sont générés procéduralement. Le 
 
 Les niveaux se succèdent dans un ordre fixe : plaines → désert → neige.
 
+![Départ](images/GenProcStart.png)
+![Désert](images/GenProcDesert.png)
+![Portail](images/GenProcPortal.png)
+
 ## Mécaniques
 
 - Génération procédurale des niveaux
